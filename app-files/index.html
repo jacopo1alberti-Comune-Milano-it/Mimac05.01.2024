@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0--01-gregorovius-facciata-">
+        <li class="text"> 01. Gregorovius Facciata </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-02-gregorovius-ingresso">
+        <li class="text">02. Gregorovius Ingresso</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-04-atrio-su-reception">
+        <li class="text">04. Atrio su Reception</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-05-reception-portineria">
+        <li class="text">05. Reception Portineria</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-06-reception-attesa">
+        <li class="text">06. Reception Attesa</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-08-riunioni-ingresso">
+        <li class="text">08. Riunioni Ingresso</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-09-riunioni-2">
+        <li class="text">09. Riunioni 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-10-consultazione-registrazione">
+        <li class="text">10. Consultazione Registrazione</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-13-terrazza-sud">
+        <li class="text">13. Terrazza Sud</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-14-cortile-sudcarico-scarico">
+        <li class="text">14. Cortile Sud,carico-scarico</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-15-cortile-sudrampa-magazzino">
+        <li class="text">15. Cortile Sud,rampa magazzino</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-16-scansioni-lato-terrazza">
+        <li class="text">16. Scansioni lato terrazza</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-17-scansioni-lato-ingresso">
+        <li class="text">17. Scansioni lato ingresso</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-18-corridoio-reception-magazzino">
+        <li class="text">18. Corridoio Reception-Magazzino</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14--19-corridoio-magazzino-uffici">
+        <li class="text"> 19. Corridoio Magazzino-Uffici</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-20-ufficio-singolo">
+        <li class="text">20. Ufficio singolo</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-21-ufficio-triplo">
+        <li class="text">21. Ufficio triplo</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-22-digitalizzazione">
+        <li class="text">22. Digitalizzazione</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-23-bagno-addetti">
+        <li class="text">23. Bagno addetti</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-24-corridoio-uffici-baie">
+        <li class="text">24. Corridoio Uffici-Baie</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-25-coridoio-magazzino-baie">
+        <li class="text">25. Coridoio Magazzino-Baie</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-26-magazzino-ingresso-nord">
+        <li class="text">26. Magazzino, ingresso Nord</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-27-magazzino-ingresso-ovest">
+        <li class="text">27. Magazzino, ingresso Ovest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-28-magazzino-ingresso-sud">
+        <li class="text">28. Magazzino, ingresso Sud</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-29-bussola-baie">
+        <li class="text">29. Bussola Baie</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-30-baie-area-estrazione">
+        <li class="text">30. Baie, area Estrazione</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-31-baie-area-lavorazione">
+        <li class="text">31. Baie, area Lavorazione</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-32-cortile-ovest">
+        <li class="text">32. Cortile Ovest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-33-baie-registrazione">
+        <li class="text">33. Baie Registrazione</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-34-cortile-nord">
+        <li class="text">34. Cortile Nord</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-35-gregorovius-uscita-nord">
+        <li class="text">35. Gregorovius, uscita Nord</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-36-gregorovius-facciata-baie">
+        <li class="text">36. Gregorovius, facciata Baie</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-37-gregorovius-vista-da-ovest">
+        <li class="text">37. Gregorovius, vista da Ovest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-38-vista-da-nord-ovest-cortile-ovest">
+        <li class="text">38. Vista da Nord-Ovest, cortile Ovest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-39-archivio-automatico-interno">
+        <li class="text">39. Archivio Automatico, interno</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-40-vista-da-sud-ovest">
+        <li class="text">40. Vista da Sud-Ovest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-41-vista-da-sud-est">
+        <li class="text">41. Vista da Sud-Est</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-42-carraio-suzzani">
+        <li class="text">42. Carraio Suzzani</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-43-metrotranvia">
+        <li class="text">43. Metrotranvia</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-44-metrotranvia-fermata-suzzani">
+        <li class="text">44. Metrotranvia, fermata Suzzani</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40--45-parco-racconigi">
+        <li class="text"> 45. Parco Racconigi</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-46-vista-aerea-da-sud-est">
+        <li class="text">46. vista aerea da Sud-Est</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-47-vista-aerea-da-ovest">
+        <li class="text">47. Vista aerea da Ovest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-48-vista-aerea-da-nord-ovest">
+        <li class="text">48. Vista aerea da Nord-Ovest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-12-consultazione-area-lettura">
+        <li class="text">12. Consultazione Area Lettura</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-11-consultazione-lato-cortile">
+        <li class="text">11. Consultazione lato cortile</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-03-atrio-su-ingresso">
+        <li class="text">03. Atrio su Ingresso</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-planimetria">
+        <li class="text">PLANIMETRIA</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
